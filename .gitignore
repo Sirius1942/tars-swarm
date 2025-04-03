@@ -1,0 +1,25 @@
+# 排除swarm文件夹
+/swarm/
+
+# 依赖目录
+/node_modules/
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS系统文件
+.DS_Store
+
+# 编辑器/IDE目录
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 构建输出
+/dist/
+/build/
+/out/ 
