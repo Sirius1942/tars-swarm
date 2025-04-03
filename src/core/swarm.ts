@@ -731,7 +731,7 @@ export class Swarm {
     const messages = [{ role: 'system', content: instructions }, ...history];
     
     if (debug) {
-      this.debugPrint(debug, "获取聊天补全:", messages);
+      this.debugPrint(debug, `获取聊天补全: ${JSON.stringify(messages.slice(0, 2))}`);
     }
     
     // 获取函数定义
