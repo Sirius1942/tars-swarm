@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": 1743655905127,
+    "type": "agent_start",
+    "data": {
+      "agent": "调试代理",
+      "instructions": "你是调试代理，帮助用户解决编程问题。提供详细的解释和代码示例。"
+    }
+  },
+  {
+    "timestamp": 1743655905127,
+    "type": "guardrail_check",
+    "data": {
+      "type": "input_validation",
+      "success": true
+    }
+  },
+  {
+    "timestamp": 1743655905127,
+    "type": "model_call",
+    "data": {
+      "model": "gpt-4o",
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是调试代理，帮助用户解决编程问题。提供详细的解释和代码示例。"
+        },
+        {
+          "role": "user",
+          "content": "如何使用TypeScript的装饰器？"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": 1743655931930,
+    "type": "guardrail_check",
+    "data": {
+      "type": "output_validation",
+      "success": true
+    }
+  },
+  {
+    "timestamp": 1743655931930,
+    "type": "agent_end",
+    "data": {
+      "agent": "调试代理"
+    }
+  }
+]

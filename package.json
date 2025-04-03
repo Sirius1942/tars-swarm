@@ -1,0 +1,35 @@
+{
+  "name": "tars-swarm",
+  "version": "0.1.0",
+  "description": "TypeScript implementation of OpenAI's Swarm for LLM agent orchestration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "test": "jest",
+    "examples:basic": "ts-node examples/basic.ts",
+    "examples:handoff": "ts-node examples/handoff.ts",
+    "examples:tracing": "ts-node examples/tracing.ts",
+    "examples:interactive": "ts-node examples/interactive_service.ts",
+    "prepare": "npm install openai@^4.0.0 uuid@^9.0.0 @types/node@^20.0.0 @types/uuid@^9.0.0 ts-node@^10.9.1 typescript@^5.0.0"
+  },
+  "keywords": [
+    "llm",
+    "agents",
+    "openai",
+    "swarm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.91.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.30",
+    "@types/uuid": "^9.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,71 @@
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Agent Trace Timeline</title>
+        <style>
+          body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+          .timeline { position: relative; max-width: 1200px; margin: 0 auto; }
+          .timeline::after { content: ''; position: absolute; width: 2px; background-color: #333; top: 0; bottom: 0; left: 50%; margin-left: -1px; }
+          .timeline-item { padding: 10px 40px; position: relative; width: 50%; box-sizing: border-box; }
+          .timeline-item:nth-child(odd) { left: 0; }
+          .timeline-item:nth-child(even) { left: 50%; }
+          .timeline-content { padding: 20px; background-color: white; border-radius: 6px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+          .timeline-icon { position: absolute; width: 30px; height: 30px; right: -15px; background-color: white; border-radius: 50%; z-index: 1; text-align: center; line-height: 30px; font-size: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+          .timeline-item:nth-child(even) .timeline-icon { left: -15px; }
+          h3 { margin-top: 0; }
+        </style>
+      </head>
+      <body>
+        <h1>Agent Trace Timeline</h1>
+        <div class="timeline">
+          
+        <div class="timeline-item">
+          <div class="timeline-icon">🚀</div>
+          <div class="timeline-content">
+            <h3>Agent Start: 调试代理</h3>
+            <p>2025-04-03T04:51:45.127Z</p>
+            <div>Instructions: 你是调试代理，帮助用户解决编程问题。提供详细的解释和代码示例。</div>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">🛡️</div>
+          <div class="timeline-content">
+            <h3>Guardrail: input_validation</h3>
+            <p>2025-04-03T04:51:45.127Z</p>
+            <div>Passed</div>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">🤖</div>
+          <div class="timeline-content">
+            <h3>Model Call</h3>
+            <p>2025-04-03T04:51:45.127Z</p>
+            <div>Model: gpt-4o</div>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">🛡️</div>
+          <div class="timeline-content">
+            <h3>Guardrail: output_validation</h3>
+            <p>2025-04-03T04:52:11.930Z</p>
+            <div>Passed</div>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">🏁</div>
+          <div class="timeline-content">
+            <h3>Agent End: 调试代理</h3>
+            <p>2025-04-03T04:52:11.930Z</p>
+            <div></div>
+          </div>
+        </div>
+      
+        </div>
+      </body>
+      </html>
+    
