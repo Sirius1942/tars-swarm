@@ -6,8 +6,8 @@ import { OpenAI } from 'openai';
  */
 export function getOpenAI(): OpenAI {
   // 设置环境变量
-  process.env.OPENAI_API_KEY = "sk-3kvmL2pBvCiclBnrDcA0A5E3DfB44773Ac0b41C5947a0395";
-  process.env.OPENAI_API_BASE = "http://116.63.86.12:3000/v1/";
+  process.env.OPENAI_API_KEY = "your key";
+  process.env.OPENAI_API_BASE = "your url";
   
   // 创建OpenAI客户端
   const client = new OpenAI({
